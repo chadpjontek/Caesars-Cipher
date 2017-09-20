@@ -1,5 +1,5 @@
 //A function which takes a ROT13 encoded string as input(CAPS ONLY) and returns a decoded string.
-function rot13(str) { // LBH QVQ VG!
+function rot13(str) {
 	/*loop through str and find charCode val for each char.
 	Then either subtract 13 (letters N-Z), add 13 (letters A-M) or do nothing.
 	Converts to characters based on Unicode value and pushes them into charCodeArr
@@ -24,3 +24,4 @@ function rot13(str) { // LBH QVQ VG!
 rot13("SERR CVMMN!"); // decodes to "FREE PIZZA!"
 rot13("SERR YBIR?"); // decodes to "FREE LOVE?"
 rot13("GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK."); // decodes to "THE QUICK BROWN DOG JUMPED OVER THE LAZY FOX."
+rot13("LBH QVQ VG!"); // decodes to "YOU DID IT!"
